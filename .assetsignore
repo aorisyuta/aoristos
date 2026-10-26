@@ -1,0 +1,14 @@
+# 公開しないファイル（Cloudflare にアップロードされない）
+.git
+.gitignore
+.assetsignore
+.wrangler
+node_modules
+wrangler.jsonc
+package.json
+package-lock.json
+bun.lock
+bun.lockb
+generate-pages.js
+readme.md
+photo

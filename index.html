@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aoristos</title>
+  <meta name="description" content="Aoristos の公式サイト。オリジナル問題の企画 AorXC、部誌、問題の背景解説、科学の甲子園への取り組みなど、Aoristos の活動をご紹介します。">
+  <meta name="author" content="Aoristos">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aoristos">
+  <meta property="og:description" content="問いを立て、解き、伝える。Aoristos の活動、部誌、解説のご案内。">
+  <meta property="og:image" content="assets/blackboard-art.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    window.pageConfig = { currentPage: 'index', basePath: '', hideRibbon: true };
+  </script>
+  <script src="assets/config.js"></script>
+  <script src="assets/sheet.js" defer></script>
+  <script src="assets/header.js" defer></script>
+  <script src="assets/script.js" defer></script>
+  <script src="assets/home.js" defer></script>
+</head>
+<body>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero hero-light" aria-labelledby="heroTitle">
+    <div class="container">
+      <img class="hero-logo" src="assets/aoristos-mark.svg" alt="" width="220" height="114">
+      <h1 class="hero-title hero-title-latin" id="heroTitle">Aoristos</h1>
+      <p class="hero-kicker">問いを立て、解き、伝える。</p>
+      <p class="hero-links">
+        <a class="more-link" href="activities.html">活動を見る</a>
+        <a class="more-link" href="publications.html">刊行物</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- お知らせ（スプレッドシートの type = news。無ければ config.js の初期値） -->
+  <section class="tiles-band" id="tilesSection" aria-label="お知らせ" hidden>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <!-- 私たちについて -->
+  <section class="band" aria-labelledby="statementTitle">
+    <div class="container statement reveal">
+      <h2 class="statement-lead" id="statementTitle">面白い問題は、<br><span class="soft">誰かに解いてほしくなる。</span></h2>
+      <p class="statement-body">
+        Aoristos は、問題を<strong>作り</strong>、<strong>解き</strong>、その背景にある考え方を<strong>伝える</strong>ことを続けています。
+        オリジナル問題に挑戦できる AorXC、部員の記事をまとめた部誌、コンテストの問題を掘り下げた解説。
+        どれも、ひとつの問いから広がる面白さを、できるだけ多くの人と分かち合うための活動です。
+      </p>
+      <p style="text-align:center;margin-top:28px"><a class="more-link" href="about.html">Aoristos について</a></p>
+    </div>
+  </section>
+
+  <!-- 活動 -->
+  <section class="band band-alt" aria-labelledby="featuredTitle">
+    <div class="container">
+      <div class="section-head" style="text-align:left;margin-bottom:32px">
+        <h2 class="section-title" id="featuredTitle">Aoristos の活動。</h2>
+        <a class="more-link" href="activities.html">すべての活動を見る</a>
+      </div>
+    </div>
+    <div class="rail-wrap">
+      <div class="rail" id="featuredRail" tabindex="0" aria-label="活動の一覧（横にスクロールできます）"></div>
+      <div class="rail-controls">
+        <button class="rail-btn" id="railPrev" type="button" aria-label="前へ"><svg viewBox="0 0 14 14"><path d="M9 2 4 7l5 5"/></svg></button>
+        <button class="rail-btn" id="railNext" type="button" aria-label="次へ"><svg viewBox="0 0 14 14"><path d="m5 2 5 5-5 5"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新のブログ -->
+  <section class="band" id="latestSection" aria-labelledby="latestTitle" hidden>
+    <div class="container">
+      <div class="section-head" style="text-align:left;margin-bottom:28px">
+        <h2 class="section-title" id="latestTitle">最新情報</h2>
+        <a class="more-link" href="blog.html">ブログをすべて読む</a>
+      </div>
+      <ul class="news-list" id="latestPosts"></ul>
+    </div>
+  </section>
+
+  <!-- フォロー（スプレッドシートの type = link） -->
+  <section class="band band-dark" id="followSection" aria-labelledby="followTitle" hidden>
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title" id="followTitle">最新の活動は、SNS で。</h2>
+        <p class="section-sub">新しい問題や刊行物、イベントのお知らせをお届けします。</p>
+      </div>
+      <ul class="social-grid" id="socialLinks"></ul>
+    </div>
+  </section>
+
+  <!-- 黒板 -->
+  <section class="band band-alt" aria-labelledby="aboutSiteTitle">
+    <div class="container about">
+      <img src="assets/blackboard-art.webp"
+           srcset="assets/blackboard-art-640.webp 640w, assets/blackboard-art.webp 1280w"
+           sizes="(max-width: 833px) 100vw, 540px"
+           width="1280" height="720" alt="数式や化学式に囲まれて Aoristos と書かれた黒板アート"
+           loading="lazy" decoding="async" class="reveal">
+      <div class="reveal">
+        <p class="eyebrow">Publications</p>
+        <h2 id="aboutSiteTitle">読んで、解いて、確かめる。</h2>
+        <p>部誌や問題の背景解説は、このサイトの「刊行物」から読むことができます。</p>
+        <p>最初の一冊には、物理チャレンジ 2026 第2チャレンジ理論問題の背景解説をどうぞ。同期現象、誘導モーター、光行差、X 線天文学まで、問題の奥に広がる物理を辿ります。</p>
+        <p style="margin-top:20px"><a class="more-link" href="publications.html">刊行物を見る</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

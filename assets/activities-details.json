@@ -1,0 +1,61 @@
+{
+  "activities": [
+    {
+      "id": "aorxc",
+      "title": "AorXC",
+      "category": "企画",
+      "description": "Aoristos が作ったオリジナル問題に挑戦できる企画です。",
+      "fullDescription": "Aoristos の部員が作成したオリジナル問題に挑戦できる企画です。小学生の部、中学・高校の部、大人・教員の部の3つに分かれているので、どなたでもご自分に合った問題に取り組めます。実施後は、問題と解答の PDF をインターネットで公開します。",
+      "details": [
+        { "label": "部門", "content": "小学生の部／中学・高校の部／大人・教員の部" },
+        { "label": "問題・解答", "content": "実施後に PDF で公開します。公開したものは「刊行物」のページからご覧いただけます。" }
+      ],
+      "links": [
+        { "label": "刊行物を見る", "href": "publications.html" }
+      ]
+    },
+    {
+      "id": "bushi",
+      "title": "Aoristos部誌",
+      "category": "刊行物",
+      "description": "部員がそれぞれのテーマで書き上げた記事をまとめた部誌です。",
+      "fullDescription": "部員がそれぞれのテーマで書き上げた記事をまとめた、Aoristos の部誌です。冊子版のほか、オンラインで PDF 版もお求めいただけます。",
+      "details": [
+        { "label": "形式", "content": "冊子版／PDF 版" },
+        { "label": "PDF 版の購入", "content": "購入ページは準備中です。公開次第このサイトでお知らせします。" }
+      ],
+      "links": [
+        { "label": "刊行物を見る", "href": "publications.html" }
+      ]
+    },
+    {
+      "id": "kaisetsu",
+      "title": "問題の背景解説",
+      "category": "刊行物",
+      "description": "物理チャレンジなどの問題を題材に、その背後にある物理現象や歴史を解説しています。",
+      "fullDescription": "コンテストの問題は、それぞれ奥の深い物理現象や、長い研究の歴史を背景にしています。Aoristos では、問題を解くだけでなく、その背景までを掘り下げた解説を書いて公開しています。",
+      "details": [
+        { "label": "公開中", "content": "物理チャレンジ 2026 第2チャレンジ理論問題 背景解説（PDF・19ページ）" }
+      ],
+      "links": [
+        { "label": "解説を読む", "href": "publications/jpho2026-background.html" }
+      ]
+    },
+    {
+      "id": "kagaku-koshien",
+      "title": "科学の甲子園",
+      "category": "大会",
+      "description": "「科学の甲子園」に向けた取り組みと、その記録です。",
+      "fullDescription": "「科学の甲子園」に向けて取り組んできた内容を、実際の問題や制作物とあわせて紹介します。どんな競技なのか、どのように準備を進めてきたのかをまとめています。",
+      "details": []
+    },
+    {
+      "id": "achievements",
+      "title": "これまでの実績",
+      "category": "記録",
+      "description": "先輩方が残してきた研究・制作・大会での成果です。",
+      "fullDescription": "これまで先輩方が残してきた研究・制作・大会での成果をまとめています。Aoristos がどんな活動を積み重ねてきたのかをご覧ください。",
+      "details": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ブログ — Aoristos</title>
+  <meta name="description" content="Aoristos のブログ。活動の記録や、刊行物・イベントのお知らせ。">
+  <meta name="author" content="Aoristos">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    window.pageConfig = { currentPage: 'blog', basePath: '' };
+  </script>
+  <script src="assets/config.js"></script>
+  <script src="assets/sheet.js" defer></script>
+  <script src="assets/header.js" defer></script>
+  <script src="assets/blog.js" defer></script>
+</head>
+<body>
+
+<main id="main" class="band-alt">
+  <header class="page-hero">
+    <div class="container">
+      <h1 class="page-title">ブログ</h1>
+      <p class="page-lead">活動の記録や、刊行物・イベントのお知らせをお届けします。</p>
+    </div>
+  </header>
+
+  <section class="container" style="padding-bottom:100px" aria-label="記事一覧">
+    <div class="chips" id="blogTags" role="group" aria-label="タグで絞り込む" hidden></div>
+    <div class="post-grid" id="blogList">
+      <p class="empty">読み込み中…</p>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+type,visible,pin,date,id,title,text,body,url,link_label,image,tags,author,style
+# 説明,type が # で始まる行は読み込まれません（メモ欄として使えます）,,,,,,,,,,,,
+# type,post＝ブログ記事 / news＝トップの販売・お知らせタイル / link＝SNS などのリンク,,,,,,,,,,,,
+# visible,FALSE にすると非表示。空欄なら表示,,,,,,,,,,,,
+# pin,news で TRUE → 他のページ上部の帯にも表示 / post で TRUE → 一覧の先頭に固定,,,,,,,,,,,,
+# date,2026/10/20 や 2026/10/20 18:00。post は未来の日時だとその時刻まで公開されない（予約投稿）,,,,,,,,,,,,
+# id,post の URL になる半角英数字（例 hello → blog/post.html?id=hello）。一度公開したら変えない,,,,,,,,,,,,
+# body,本文。空行で段落 / ## 見出し / - 箇条書き / **太字** / [文字](URL) / ![説明](画像URL)。セル内改行は Alt+Enter（Mac は ⌘+Enter）,,,,,,,,,,,,
+# image,画像 URL（Google ドライブの共有リンクも可）。news では pdf / tshirt と書くと内蔵イラストを表示,,,,,,,,,,,,
+# url,リンク先。リンク先の URL。サイト内なら activities/aorxc.html のように書ける,,,,,,,,,,,,
+# style,news のタイル色。light（白）/ dark（黒）。空欄なら自動,,,,,,,,,,,,
+# 注意,news の行が1つもないときは、config.js の defaultNews（刊行物の案内）が表示されます,,,,,,,,,,,,
+news,,,,,部誌・解説を公開しています。,物理チャレンジ 2026 第2チャレンジ理論問題の背景解説など。,,publications.html,刊行物を見る,pdf,,,light
+link,,,,,X,@aoristos_example,,https://x.com/,,,,,
+link,,,,,Instagram,@aoristos_example,,https://www.instagram.com/,,,,,
+post,,TRUE,2026/10/26,hello,公式サイトを公開しました,Aoristos の公式サイトを公開しました。,"Aoristos の公式サイトを公開しました。
+
+## このサイトでできること
+- [活動](activities.html) の紹介を読む
+- 部誌や解説などの [刊行物](publications.html) を読む
+- ブログで最新のお知らせを見る
+
+これからもよろしくお願いします。",,,,お知らせ,Aoristos,
+post,,,2026/10/16,jpho2026-background,物理チャレンジ 2026 の背景解説を公開しました,第2チャレンジ理論問題の4つの大問について、背景にある物理を解説しました。,"物理チャレンジ 2026 第2チャレンジ理論問題の背景解説を公開しました。
+
+## 収録内容
+1. 同期現象と Kuramoto model
+2. 誘導モーター
+3. 光行差と地動説・相対性理論
+4. XRISM 衛星と X 線天文学
+
+[解説を読む](publications/jpho2026-background.html)",,,,刊行物,Aoristos,
+post,FALSE,,2026/10/01,draft-sample,（下書きの例）この記事は表示されません,visible を FALSE にすると、公開前の下書きとして置いておけます。,本文,,,,,,

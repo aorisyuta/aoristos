@@ -1,0 +1,11 @@
+// Cloudflare Workers（静的アセット）の設定。
+// このファイルがあると、ビルド時の自動セットアップ（wrangler の追加インストール）が行われない。
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "aoristos",
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
