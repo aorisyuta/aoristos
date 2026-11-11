@@ -166,6 +166,12 @@ npm start          # python3 -m http.server 8000
 
 各ページの `<head>` では `config.js` を最初に（`defer` なしで）読み、その後 `sheet.js` → `header.js` → 各ページのスクリプトの順に `defer` で読み込みます。
 
+`assets/` の CSS・JS を書き換えたら、全ページの読み込み URL の末尾 `?v=日付` を新しい日付に置き換えてください（ブラウザに古いファイルが残って、変更が反映されないのを防ぐため）。`generate-pages.js` のテンプレートも同じです。
+
+```bash
+grep -rl '?v=' --include=*.html --include=generate-pages.js . | xargs sed -i -E 's/\?v=[0-9]+/?v=新しい日付/g'
+```
+
 ---
 
 ## 設計方針
