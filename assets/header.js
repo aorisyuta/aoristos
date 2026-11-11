@@ -1,7 +1,7 @@
 /*
   header.js — 共通のナビゲーション・お知らせリボン・フッターを生成する
   各ページで window.pageConfig を定義してから defer で読み込む。
-    currentPage: index / activities / publications / blog / about
+    currentPage: index / activities / publications / blog / members / about
     basePath:    サブフォルダのページは '../'
     title:       タブに出るタイトル（省略時は既存の <title>）
 */
@@ -16,6 +16,7 @@
     { key: 'activities', href: 'activities.html', label: '活動' },
     { key: 'publications', href: 'publications.html', label: '刊行物' },
     { key: 'blog', href: 'blog.html', label: 'ブログ' },
+    { key: 'members', href: 'members.html', label: 'メンバー' },
     { key: 'about', href: 'about.html', label: 'Aoristos について' }
   ];
 

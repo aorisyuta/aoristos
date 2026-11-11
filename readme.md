@@ -18,6 +18,8 @@ Aoristos の公式サイトです。活動の紹介、部誌や解説などの�
 | 刊行物の一覧 | `publications.html` |
 | PDF の本体 | `assets/docs/` |
 | スプレッドシートの URL・お知らせの初期値 | `assets/config.js` |
+| メンバー紹介の一覧 | `members.html` |
+| Sodpion の個人ページ・作品 | `sodpion/`（`sodpion/sodpion.html`） |
 
 スプレッドシートを書き換えると、**サイトを再アップロードしなくても数分で反映**されます
 （Google 側の公開キャッシュとブラウザのキャッシュで最大5分ほどかかります）。
@@ -140,6 +142,8 @@ npm start          # python3 -m http.server 8000
 ├── blog.html               ブログ一覧
 ├── blog/post.html          ブログ記事（?id=記事ID）
 ├── about.html              Aoristos について
+├── members.html            メンバー紹介
+├── sodpion/                Sodpion の個人ページ（sodpion.html）と作品
 ├── 404.html
 ├── generate-pages.js       活動詳細ページの生成
 ├── templates/
